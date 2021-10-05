@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Health Cover</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <div class="navbar">
+      <img src="./images/cover.jpg" style="width:250px;height:60px;" alt="" />
+
+      <nav>
+        <ul id='MenuItems'>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#feature'>About Us</a></li>
+          <li><a href='#footer'>Contact</a></li>
+          <li><a href='plans.html'>Details</a></li>
+          <li><a href='Kyc.html' >KYC</a></li>
+          <li><a href='form.html' class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+              style="width:auto;">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header class="hero-section">
+      <div class="hero-text-container">
+        <h1>Humanizing<br />Your Insurance.</h1>
+        <p>Get your life insurance coverage easier and faster. We blend our
+          expertize<br />
+          and technology to help you find the plan that's right for you.Ensure
+          you<br />
+          and your loved ones are protected.</p>
+        <button>View Plans</button>
+      </div>
+      <div class="hero-img-container">
+        <img src="./images/fam.jpeg" alt="" />
+      </div>
+    </header>
+    <div class="container my-3">
+      <!--<h3>Top News <span class="badge badge-secondary">by Indian shatabdi News</span></h3>Bootstrap styling-->
+      <h3>Top News</h3>
+      <hr>
+      <div class="accordion" id="newsAccordion"></div>
+    </div>
+    
+    <section class="features-section" id='feature'>
+      <h1>We are different</h1>
+      <div class="feature-items-container">
+        <div class="feature-item">
+          <img src="./images/icon-snappy-process.svg" alt="" />
+          <h1>Snappy Process</h1>
+          <p>Our application process can be completed in<br />minutes,not
+            hours.Don't get stuck filling <br />in tidious forms.</p>
+        </div>
+        <div class="feature-item">
+          <img src="./images/icon-affordable-prices.svg" alt="" />
+          <h1>Affordable Prices</h1>
+          <p>We don't want you worrying about high monthly <br />costs.Our
+            prices may be low.But we still offer<br />
+            the best coverage possible.</p>
+        </div>
+        <div class="feature-item">
+          <img src="./images/icon-people-first.svg" alt="" />
+          <h1>People First</h1>
+          <p>Our plans aren't full of conditions and clauses<br />
+            to prevent payouts. We make sure you're<br />
+            covered when you need it.</p>
+        </div>
+      </div>
+    </section>
+    <section class="clt-section">
+      <h1>Find out more<br />
+        about how we work.</h1>
+      <button>How we work</button>
+    </section>
+    <footer class="footer" id='footer'>
+      <section class="footer-section">
+        <div class="logo-container">
+          <div class="social-container">
+            <img src="./images/icon-facebook.svg" alt="" />
+            <img src="./images/icon-instagram.svg" alt="" />
+            <img src="./images/icon-twitter.svg" alt="" />
+            <img src="./images/icon-pinterest.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer-menu-container">
+          <div class="menu">
+            <h1>Our Company</h1>
+            <div class="menu-items">
+              <a href="#">How we work</a>
+              <a href="#">Why CoverFox?</a>
+              <a href="#">View Plans</a>
+              <a href="#">Reviews</a>
+            </div>
+          </div>
+          <div class="menu">
+            <h1>Help me</h1>
+            <div class="menu-items">
+              <a href="#">Faq</a>
+              <a href="#">Terms of use?</a>
+              <a href="#">Privacy policy</a>
+              <a href="#">cookies</a>
+            </div>
+          </div>
+          <div class="menu">
+            <h1>Contact</h1>
+            <div class="menu-items">
+              <a href="#">Sales</a>
+              <a href="#">Support</a>
+              <a href="#">Live Chat</a>
+            </div>
+          </div>
+          <div class="menu">
+            <h1>Others</h1>
+            <div class="menu-items">
+              <a href="#">Carriers</a>
+              <a href="#">Press</a>
+              <a href="#">Licences</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!---- <div id="displaytable" >
+          <table id="displaytable" class="highlighted" >
+                <thead>  
+                <tr>
+                      <th>No of Family Members</th>
+                      <th>No of Hospitals</th>
+                      <th>Monthly fee</th>
+                  </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>1500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+		 
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+         <form id='login' class='input-group-login'>
+            <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+             <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+   <script>
+    function myfunction()
+{
+    if (document.getElementById('displaytable').style.display === 'none')
+        document.getElementById('displaytable').style.display='block';
+    else
+        document.getElementById('displaytable').style.display='none';
+}
+</script>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+        
+        
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+
+        }
+        
+    </script>
+    <script src="myscripts.js"></script>-->
+     <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

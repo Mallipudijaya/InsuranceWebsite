@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Cover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="navbar">
+            <img src="./images/cover.jpg" style="width:250px;height:60px;" alt="" />
+            <nav>
+                <ul id='MenuItems'> 
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><a href='plans.html' >Details</a></li>
+                    <li><a href='Kyc.html'  >KYC</a></li>
+                    <li><a href='#' class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="full-page">
+            <div class='login-page'>
+                <h1 style="color: #F3C693;position:center;margin-left: 500px;
+                margin-right: auto">Know your customer</h1>
+                <div class="form-box">
+        <form  action="/users/kyc" method="POST" >
+            <input type='text'class='input-field'placeholder='Customer Name' name='cname' required>
+            <input type='text'class='input-field'placeholder='Fathers Name 'name='fname' required>
+            <input type='text'class='input-field'placeholder='Email' name='email' pattern="/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/" title="abc@gmail.com" required>
+            <input type='text'class='input-field' name='addr' placeholder='Address'id ='addr'  required>
+            <input type='number'class='input-field'name='phno'placeholder='PhoneNumber' id='phno'  required> 
+            <input type='checkbox' class='check-box'><span style="margin: 30px 10px 128px 0;">I agree to the terms and  conditions</span>
+            <button type='submit' class='submit-btn' onclick='' ><a href="index.html">submit</a></button>
+            </form>
+</div></div></div>
+
+</body>
+</html>
